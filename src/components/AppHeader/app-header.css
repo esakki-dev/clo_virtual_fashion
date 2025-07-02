@@ -1,0 +1,48 @@
+.header_container {
+    display: flex;
+    text-align: center;
+    color: #96969F;
+    background-color: #000000;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 0 0 #1A1A1F inset;
+    height: 64px;
+    z-index: 10001;
+    padding: 0px 32px;
+}
+
+.app_user_container {
+    display: flex;
+    gap: 14px;
+}
+
+.sign_in_btn {
+    font-size: 10px;
+    padding: 5px 8px;
+    border: none;
+    color: var(--text-white);
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sign_in_btn:hover {
+    background-color: #47474E;
+    padding: 5px 8px;
+}
+
+.sign_up_btn {
+    font-size: 10px;
+    padding: 4px 8px;
+    border: 1px solid var(--text-white);
+    background-color: transparent;
+    color: var(--text-white);
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}

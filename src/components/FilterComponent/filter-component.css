@@ -1,0 +1,139 @@
+.filter_box {
+    padding: 12px 0px;
+    background-color: var(--primary-background);
+    width: 100%;
+}
+
+.flex_box {
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header_txt {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-white);
+    text-align: start;
+}
+
+.search_item_box {
+    position: relative;
+    min-width: 250px;
+    width: 100%;
+}
+
+.search_items_input {
+    width: 100%;
+    border: none;
+    padding: 13px 0px;
+    border-radius: 32px;
+    background-color: #1A1A1F;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 40px;
+    color: #E7E7E8;
+}
+
+.search_items_input:focus {
+    outline: 1px solid #66F0FF;
+}
+
+.search_icon {
+    position: absolute;
+    top: 58%;
+    left: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.clear_icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing_option_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: grey;
+}
+
+.pricing_option_box {
+    min-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 18px;
+    background-color: #1A1A1F;
+    border-radius: 6px;
+    border: 1px solid #1A1A1F;
+}
+
+.left_box {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.reset_pricing_filter {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.checkbox_list {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_checkbox_label {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+input[type="checkbox" i] {
+    accent-color: #66F0FF;
+    width: 16px;
+    cursor: pointer;
+}
+
+.pricing_option_active {
+    border: 1px solid #66F0FF;
+}
+
+@media (max-width: 768px) {
+    .flex_box {
+        margin-right: 120px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing_option_box {
+        margin-left: 44px;
+        flex-direction: column;
+    }
+}
